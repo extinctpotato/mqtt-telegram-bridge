@@ -1,0 +1,3 @@
+mqtt/**
+__pycache__/**
+config.ini
