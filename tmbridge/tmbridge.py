@@ -26,7 +26,7 @@ class Bridge(mqtt.Client):
         self.upd = telegram
 
 
-def main()
+def main():
     logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.INFO)
     logging.info("Initializing...")
     ini = c.ConfigParser()
