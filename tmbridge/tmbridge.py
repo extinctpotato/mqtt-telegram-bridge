@@ -25,7 +25,8 @@ class Bridge(mqtt.Client):
         self.subscribe(self.ini['MQTT']['subscribe'])
         self.upd = telegram
 
-if __name__ == '__main__':
+
+def main()
     logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.INFO)
     logging.info("Initializing...")
     ini = c.ConfigParser()
@@ -43,3 +44,6 @@ if __name__ == '__main__':
     logging.info("Started MQTT client")
 
     tel.idle()
+
+if __name__ == '__main__':
+    main()
